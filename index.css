@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+}
+.w960{
+    width: 960px;
+    margin: 0 auto;
+}
+.title .top .w960>a{
+    display: inline-block;
+    width: 270px;
+    height: 51px;
+    margin-top: 19px;
+}
+.title{
+    width: 100%;
+    height: 579px;
+    position: relative;
+    overflow: hidden;
+}
+.title .top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89px;
+    line-height: 89px;
+    background: url("img/nav-b.png") repeat-x;
+    z-index: 1111;
+}
+.title .top ul{
+    float: right;
+}
+.title .top ul li{
+    float: left;
+}
+.title .top ul li a{
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 88px;
+    padding:0 30px;
+    font-size: 18px;
+    text-decoration: none;
+    z-index: 111;
+}
+.title .top ul li.co{
+    opacity: .8;
+}
+.title .top ul li:hover{
+    opacity: 1;
+}
+.title .top ul li :hover span{
+    transform: scale(1,1);
+    background: rgba(0,0,0,.1);
+}
+.title .top ul li em{
+    font-style: normal;
+    height: 88px;
+    line-height:88px ;
+    white-space: nowrap;
+}
+.title .top ul li span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    transform: scale(0,1);
+    transition: .2s;
+}
+.title .top ul li.r{
+    width: 170px;
+
+}
+
+.title .bottom{
+    height: 580px;
+    position: relative;
+}
+.title .bottom>a{
+    position: absolute;
+    top:260px;
+    cursor: pointer;
+    z-index: 1111;
+    opacity: .7;
+}
+.title .bottom>a:hover{
+    opacity: 1;
+    /*background: rgba(255,255,255,0.5);*/
+}
+.title .bottom>a.left{
+    left: 71px;
+}
+.title .bottom>a.right{
+    right:71px;
+}
+.title .bottom .signLine{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.title .bottom .signLine .bear{
+    background: #193d85;
+}
+.title .bottom .signLine .fox{
+    background: #ff6900;
+    display: none;
+}
+.title .bottom .signLine .sign{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title .bottom .signLine .sign a{
+    float: left;
+}
+.title .bottom .signLine .bearPic{
+    position: relative;
+    bottom: 0;
+    transform: translate(0px);
+    opacity:0;
+}
+.title .bottom .signLine .bear .move1{
+    position: absolute;
+    top: 228px;
+    left:50%;
+    text-decoration: none;
+    transform: translate(110px);
+    opacity:0;
+}
+.title .bottom .signLine .signCur .bearPic{
+    opacity: 1;
+    transform: translate(120px);
+    transition: transform 0.5s;
+}
+.title .bottom .signLine .signCur .move1{
+    opacity: 1;
+    transition: transform 0.5s;
+    transform: translate(0px);
+}
+.title .bottom .signLine .bear .move1 p{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #fff;
+
+}
+.title .bottom .signLine .fox a{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.title .bottom .signLine .foxPic{
+    top:100px;
+    transform: translate(100px);
+    opacity: 0;
+}
+.title .bottom .signLine .foxPic2{
+    bottom:45px;
+    transform: scale(0);
+    opacity: 0;
+}
+.title .bottom .signLine .signCur .foxPic{
+    transition: transform .5s;
+    transform: translate(0px);
+    opacity: 1;
+}
+.title .bottom .signLine .signCur .foxPic2{
+    transition: transform .5s;
+    transform: scale(1);
+    opacity: 1;
+}
+.title .bottom .change{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -24px;
+}
+.title .bottom .change i{
+    display: inline-block;
+    width: 24px;
+    height: 5px;
+    margin-right: 11px;
+    cursor: pointer;
+    background: #333;
+    opacity:.3;
+}
+.title .bottom .change i.bg0{
+    background: #333;
+    opacity:.3;
+}
+.title .bottom .change i.bg1{
+    background: #fff;
+    opacity:.3;
+}
+
+/*------------------------title End,imgINfo Start--------------------*/
+.imgInfo{
+    width: 100%;
+    height: 296px;
+    background: #f8f8f8;
+}
+.imgInfo ul{
+
+}
+.imgInfo ul li{
+    float: left;
+    height: 296px;
+    width: 33.33%;
+    position: relative;
+}
+.imgInfo ul li a{
+    display: block;
+    text-align: center;
+    height: 296px;
+    width: 100%;
+}
+.imgInfo ul li a span,.imgInfo ul li a p,.imgInfo ul li a h3{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.imgInfo ul li a span{
+    top: 58px;
+    left: 84px;
+    display: inline-block;
+    width: 152px;
+    height: 124px;
+    background: url("img/icon-24.png") no-repeat;
+    z-index: 11;
+}
+.imgInfo ul li a .icon1{
+    background-position: 0 -128px ;
+}
+.imgInfo ul li a .icon2{
+    background-position:  -300px -128px;
+}
+.imgInfo ul li a .icon3{
+    background-position:  -604px -132px;
+}
+.imgInfo ul li a p{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+    bottom: 46px;
+}
+.imgInfo ul li a h3{
+    line-height: 24px;
+    color: #ff6900;
+    font-weight: normal;
+    bottom: 72px;
+}
+.imgInfo ul li>div{
+    width: 164px;
+    height: 165px;
+    z-index: 1;
+    background: url("img/radius-24.png") no-repeat;
+    position:absolute ;
+    top: 32px;
+    left: 50%;
+    margin-left: -82px;
+    transform: scale(0);
+    transition: .5s;
+}
+.imgInfo ul li:hover div{
+    transform: scale(1);
+}
+.imgInfo ul li:hover span{
+    background-position-y: 0;
+}
+/*-------------------imgInfo End ,contain Start--------------*/
+.container{
+    padding: 50px 0 30px;
+}
+.container h2{
+    font-weight: normal;
+    font-style: normal;
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #ff6900;
+}
+.container .hotNews1{
+    padding: 25px 0;
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+.container .hotNews1 .newsPic{
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    float: left;
+}
+.container .hotNews1 .newsPic img{
+    transform: scale(1);
+
+}
+.container .hotNews1 .newsPic:hover img{
+    transform: scale(1.2);
+    transition:all .6s;
+}
+.container .hotNews1 .newsR{
+    margin-left: 334px;
+}
+.container .hotNews1 .newsR .newsR-tittle a{
+    color:#333 ;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container .hotNews1 .newsR .newsR-tittle:hover a{
+    color: #ff6900;
+}
+.container .hotNews1 .newsR .newsR-con{
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+}
+.container .hotNews1 .newsR .newsR-con span{
+    display: inline-block;
+    padding-right: 30px;
+}
+.container .hotNews1 .newsR .newsR-con i{
+    display: inline-block;
+    font-style: normal;
+    margin-right: 8px;
+}
+.container .hotNews1 .newsR .newsR-con b{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: -11px;
+    background: url("img/back.png") no-repeat;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.container .hotNews1 .newsR .newsR-con .icon2{
+    background-position:0 -149px ;
+}
+.container .hotNews1 .newsR .newsR-con .icon3{
+    background-position:-40px -149px ;
+}
+.container .hotNews1 .newsR .newsR-con .icon4{
+    background-position:-73px -149px;
+}
+
+.container .hotNews1 .newsR .newsR-con .icon2:hover{
+    background-position:0 -176px ;
+}
+.container .hotNews1 .newsR .newsR-con .icon3:hover{
+    background-position:-40px -176px ;
+}
+.container .hotNews1 .newsR .newsR-con .icon4:hover{
+    background-position:-73px -176px ;
+}
+
+
+.container .hotNews1 .newsR p a{
+    font-size: 12px;
+    color: #666;
+    font-size: 12px;
+}
+.container .hotNews1 .newsR>a{
+    display: block;
+    width: 107px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #ff6900;
+    font-size: 12px;
+    /*vertical-align: middle;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("img/back.png") no-repeat;
+    background-position:0 -54px;
+}
+.container .hotNews1 .newsR>a:hover{
+    background-position: 0 -92px;
+    color: #fff;
+}
+/*----------------------centerEnd   Start------------*/
+.cenLast{
+    height: 161px;
+}
+.cenLast h3{
+    font-style: normal;
+    font-weight: normal;
+    color: #ff6900;
+    margin-bottom: 15px;
+}
+.cenLast ul{
+    width: 100%;
+}
+.cenLast ul li{
+    float: left;
+    width: 33.33%;
+    height: 30px;
+    line-height: 30px;
+}
+.cenLast ul li a{
+    display: block;
+    font-size: 12px;
+    color:#666 ;
+    text-decoration: none;
+    padding: 0 10px 0 24px;
+    background: url("img/back.png") no-repeat;
+    background-position: 0 -218px;
+}
+.cenLast ul li:hover a{
+    color: #ff6900;
+}
+.end{
+    height: 160px;
+    background: #464646;
+}
+.end .endIn .endIn-icon{
+    padding-top: 20px;
+    text-align: center;
+}
+.end .endIn .endIn-icon span{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    margin: 0 10px;
+    background: url("img/newshares.png") no-repeat;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.end .endIn .endIn-icon span.icon6{
+    background-position:-63px 0 ;
+}
+.end .endIn .endIn-icon span.icon7{
+    background-position:-126px 0 ;
+}
+.end .endIn .endIn-icon span:hover{
+    opacity: 1;
+}
+.end .endIn>span{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #c0c0c0;
+    text-align: center;
+}
+.end .endIn>span a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #c0c0c0;
+}
+.end .endIn>span a:hover{
+    color: #fff;
+}
+.end .endIn>p{
+    font-size: 12px;
+    color: #6d6d6d;
+    text-align: center;
+    line-height: 22px;
+}
+.wx{
+    width: 82px;
+    height: 39px;
+    position: fixed;
+    bottom: 46px;
+    right: 38px;
+    /*overflow: hidden;*/
+}
+.wx .hideBox{
+    overflow: hidden;
+     width: 106px;
+     height: 142px;
+    padding: 11px;
+    background:url("img/wx-pop.png") no-repeat;
+    position: fixed;
+    bottom: 93px;
+    right: 15px;
+    transform: scale(1,0);
+    transform-origin:bottom;
+
+}
+.wx .hideBox p{
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #464646;
+}
+.wx .wxIcon{
+    width: 82px;
+    height: 39px;
+    background: url("img/back.png") no-repeat;
+    background-position:0 -352px ;
+    cursor: pointer;
+
+}
+.wx .wxIcon:hover{
+    background-position: -82px -352px;
+}
+.wx:hover .hideBox{
+    transform: scale(1,1);
+    transition:transform 0.3s ;
+}
+
+
+
+
+
+
+
+
+
+
+
